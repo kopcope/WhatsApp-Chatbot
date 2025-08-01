@@ -1,0 +1,871 @@
+INFO:__main__:🚀 Starting WhatsApp webhook server on port 8000
+INFO:__main__:📡 Webhook URL: http://localhost:8000/webhook
+ * Serving Flask app 'webhook_server'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.100.12:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTA5RTY0MTY4OUJFNTY1MEQ5NgA=",
+                "timestamp": "1752094309",
+                "text": {
+                  "body": "Check my balance and send it in a voice message"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752094309
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTA5RTY0MTY4OUJFNTY1MEQ5NgA=
+INFO:__main__:   Text: Check my balance and send it in a voice message
+INFO:__main__:🎵 User requested audio response in message: 'Check my balance and send it in a voice message...'
+INFO:__main__:🔍 Multi-command debug - Original: 'check my balance and send it in a voice message'
+INFO:__main__:🔍 Multi-command debug - Clean: 'check my balance and send it in a'
+INFO:__main__:🔍 Multi-command debug - Use Audio: True
+INFO:__main__:⚠️ No last response to repeat, generating new response
+INFO:__main__:🎵 Attempting to send audio response to 96891224954
+INFO:__main__:🎵 Text converted to speech: 'Hi Nisham! Your current balance is 100000 points. ...'
+INFO:__main__:📤 Uploading audio file to WhatsApp...
+INFO:__main__:✅ Audio uploaded successfully: 1455896535679702
+INFO:__main__:🧹 Cleaned up temporary audio file: /var/folders/jq/72_52g9164x2nhltfnllyylc0000gn/T/tmp4_yap26f.mp3
+INFO:__main__:🎵 Audio response sent to 96891224954
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:51:57] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBIxODAyNDhBMzI3RDQxNUY5MDUA",
+                "status": "sent",
+                "timestamp": "1752094318",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "93728616b184581313228edd2a629948",
+                  "expiration_timestamp": "1752094318",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:51:59] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBIxODAyNDhBMzI3RDQxNUY5MDUA",
+                "status": "delivered",
+                "timestamp": "1752094318",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "93728616b184581313228edd2a629948",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:51:59] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBIxODAyNDhBMzI3RDQxNUY5MDUA",
+                "status": "read",
+                "timestamp": "1752094319",
+                "recipient_id": "96891224954"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:51:59] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTQ1MTJBQ0FFQkU1RDFBRTc0QgA=",
+                "timestamp": "1752094328",
+                "text": {
+                  "body": "Hello and say it"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752094328
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTQ1MTJBQ0FFQkU1RDFBRTc0QgA=
+INFO:__main__:   Text: Hello and say it
+INFO:__main__:🎵 User requested audio response in message: 'Hello and say it...'
+INFO:__main__:🔍 Multi-command debug - Original: 'hello and say it'
+INFO:__main__:🔍 Multi-command debug - Clean: 'hello and'
+INFO:__main__:🔍 Multi-command debug - Use Audio: True
+ERROR:__main__:❌ OpenAI API error: 429 - {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}
+
+INFO:__main__:🔄 Using fallback responses (OpenAI not available)
+INFO:__main__:⚠️ No last response to repeat, generating new response
+INFO:__main__:🎵 Attempting to send audio response to 96891224954
+INFO:__main__:🎵 Text converted to speech: 'Hi there! Great to hear from you. What can I assis...'
+INFO:__main__:📤 Uploading audio file to WhatsApp...
+INFO:__main__:✅ Audio uploaded successfully: 2104505223395771
+INFO:__main__:🧹 Cleaned up temporary audio file: /var/folders/jq/72_52g9164x2nhltfnllyylc0000gn/T/tmpyie04v51.mp3
+INFO:__main__:🎵 Audio response sent to 96891224954
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:14] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBJCMDdGRkM4M0Y5OUZGQzJDRkQA",
+                "status": "sent",
+                "timestamp": "1752094335",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "8bb08818b4daa07f5fbfa2fcd908e2be",
+                  "expiration_timestamp": "1752094335",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:15] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBJCMDdGRkM4M0Y5OUZGQzJDRkQA",
+                "status": "delivered",
+                "timestamp": "1752094335",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "8bb08818b4daa07f5fbfa2fcd908e2be",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:15] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBJCMDdGRkM4M0Y5OUZGQzJDRkQA",
+                "status": "read",
+                "timestamp": "1752094335",
+                "recipient_id": "96891224954"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:16] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUUxRTNCNDMyMTk5REFERTM1NwA=",
+                "timestamp": "1752094341",
+                "text": {
+                  "body": "Tell me a joke"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752094341
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUUxRTNCNDMyMTk5REFERTM1NwA=
+INFO:__main__:   Text: Tell me a joke
+INFO:__main__:🔍 Multi-command debug - Original: 'tell me a joke'
+INFO:__main__:🔍 Multi-command debug - Clean: 'tell me a joke'
+INFO:__main__:🔍 Multi-command debug - Use Audio: False
+ERROR:__main__:❌ OpenAI API error: 429 - {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}
+
+INFO:__main__:🔄 Using fallback responses (OpenAI not available)
+INFO:__main__:⚠️ No last response to repeat, generating new response
+INFO:__main__:🎵 Attempting to send audio response to 96891224954
+INFO:__main__:🎵 Text converted to speech: 'Why don't eggs tell jokes? They'd crack each other...'
+INFO:__main__:📤 Uploading audio file to WhatsApp...
+INFO:__main__:✅ Audio uploaded successfully: 1779559719655769
+INFO:__main__:🧹 Cleaned up temporary audio file: /var/folders/jq/72_52g9164x2nhltfnllyylc0000gn/T/tmp4ky84wjb.mp3
+INFO:__main__:🎵 Audio response sent to 96891224954
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:26] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3MkUzMkUyQzA1QkZEOTFCRUQA",
+                "status": "sent",
+                "timestamp": "1752094347",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "5e1f9abe50fa3703b643e1631abac1c4",
+                  "expiration_timestamp": "1752094347",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:28] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3MkUzMkUyQzA1QkZEOTFCRUQA",
+                "status": "delivered",
+                "timestamp": "1752094348",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "5e1f9abe50fa3703b643e1631abac1c4",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:28] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3MkUzMkUyQzA1QkZEOTFCRUQA",
+                "status": "read",
+                "timestamp": "1752094348",
+                "recipient_id": "96891224954"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:29] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUFBQ0M5OUMyRTlFNTQ1QkE4NwA=",
+                "timestamp": "1752094355",
+                "text": {
+                  "body": "Register"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752094355
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUFBQ0M5OUMyRTlFNTQ1QkE4NwA=
+INFO:__main__:   Text: Register
+INFO:__main__:🔍 Multi-command debug - Original: 'register'
+INFO:__main__:🔍 Multi-command debug - Clean: 'register'
+INFO:__main__:🔍 Multi-command debug - Use Audio: False
+INFO:__main__:✅ Response sent to 96891224954
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:39] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI2REY5MjFEQTk1NEVCODBFNDQA",
+                "status": "sent",
+                "timestamp": "1752094359",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "ca9a0d113ff3f8bba967c5d131bc26a6",
+                  "expiration_timestamp": "1752094359",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:40] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI2REY5MjFEQTk1NEVCODBFNDQA",
+                "status": "delivered",
+                "timestamp": "1752094360",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "ca9a0d113ff3f8bba967c5d131bc26a6",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:40] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI2REY5MjFEQTk1NEVCODBFNDQA",
+                "status": "read",
+                "timestamp": "1752094360",
+                "recipient_id": "96891224954"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:52:41] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTFCQjZCM0VENzgwM0I4NzNCQgA=",
+                "timestamp": "1752094376",
+                "text": {
+                  "body": "Repeat it in a voice message"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752094376
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTFCQjZCM0VENzgwM0I4NzNCQgA=
+INFO:__main__:   Text: Repeat it in a voice message
+INFO:__main__:🎵 User requested audio response in message: 'Repeat it in a voice message...'
+INFO:__main__:🔍 Multi-command debug - Original: 'repeat it in a voice message'
+INFO:__main__:🔍 Multi-command debug - Clean: 'repeat it in a'
+INFO:__main__:🔍 Multi-command debug - Use Audio: True
+ERROR:__main__:❌ OpenAI API error: 429 - {
+    "error": {
+        "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.",
+        "type": "insufficient_quota",
+        "param": null,
+        "code": "insufficient_quota"
+    }
+}
+
+INFO:__main__:🔄 Using fallback responses (OpenAI not available)
+INFO:__main__:🔄 Repeating last response in audio: '👋 Hi Nisham, you're already registered! Ready to k...'
+INFO:__main__:🎵 Attempting to send audio response to 96891224954
+INFO:__main__:🎵 Text converted to speech: 'Hi Nisham, you're already registered! Ready to kee...'
+INFO:__main__:📤 Uploading audio file to WhatsApp...
+INFO:__main__:✅ Audio uploaded successfully: 3651205868515217
+INFO:__main__:🧹 Cleaned up temporary audio file: /var/folders/jq/72_52g9164x2nhltfnllyylc0000gn/T/tmpqvq3suzs.mp3
+INFO:__main__:🎵 Audio response sent to 96891224954
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:53:01] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3QTBFMUJEOUI1QTNGRUUxNTIA",
+                "status": "sent",
+                "timestamp": "1752094382",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "4fa32c109fd4b8775594254f6f8611a5",
+                  "expiration_timestamp": "1752094382",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:53:03] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3QTBFMUJEOUI1QTNGRUUxNTIA",
+                "status": "delivered",
+                "timestamp": "1752094383",
+                "recipient_id": "96891224954",
+                "conversation": {
+                  "id": "4fa32c109fd4b8775594254f6f8611a5",
+                  "origin": {
+                    "type": "service"
+                  }
+                },
+                "pricing": {
+                  "billable": false,
+                  "pricing_model": "PMP",
+                  "category": "service",
+                  "type": "free_customer_service"
+                }
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:53:03] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "3912219192422327",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "15556535575",
+              "phone_number_id": "624874080717244"
+            },
+            "statuses": [
+              {
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgARGBI3QTBFMUJEOUI1QTNGRUUxNTIA",
+                "status": "read",
+                "timestamp": "1752094383",
+                "recipient_id": "96891224954"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2025 00:53:04] "POST /webhook HTTP/1.1" 200 -

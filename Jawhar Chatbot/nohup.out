@@ -1,0 +1,53 @@
+INFO:__main__:Starting WhatsApp Chatbot...
+INFO:__main__:Using token: EAARs8gyoM...TZAEu3oHRN
+INFO:__main__:Using phone number ID: 624874080717244
+INFO:__main__:Testing WhatsApp API connection...
+INFO:__main__:Request URL: https://graph.facebook.com/v18.0/624874080717244
+INFO:__main__:🚀 Starting WhatsApp webhook server on port 8000
+INFO:__main__:📡 Webhook URL: http://localhost:8000/webhook
+ * Serving Flask app 'webhook_server'
+ * Debug mode: on
+INFO:__main__:✅ WhatsApp API connection successful!
+INFO:__main__:Phone number: 15556535575
+INFO:__main__:Verified name: Test Number
+
+==================================================
+WhatsApp API Connection Test Successful!
+==================================================
+Would you like to send a test message? (y/n): INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.100.12:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:🚀 Starting WhatsApp webhook server on port 8000
+INFO:__main__:📡 Webhook URL: http://localhost:8000/webhook
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-696-344
+INFO:__main__:🚀 Starting WhatsApp webhook server on port 8000
+INFO:__main__:📡 Webhook URL: http://localhost:8000/webhook
+ * Serving Flask app 'webhook_server'
+ * Debug mode: on
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.30.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:__main__:Starting WhatsApp Chatbot...
+INFO:__main__:Using token: EAARs8gyoM...TZAEu3oHRN
+INFO:__main__:Using phone number ID: 624874080717244
+INFO:__main__:Testing WhatsApp API connection...
+INFO:__main__:Request URL: https://graph.facebook.com/v18.0/624874080717244
+INFO:__main__:🚀 Starting WhatsApp webhook server on port 8000
+INFO:__main__:📡 Webhook URL: http://localhost:8000/webhook
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 310-696-344
+INFO:__main__:✅ WhatsApp API connection successful!
+INFO:__main__:Phone number: 15556535575
+INFO:__main__:Verified name: Test Number
+
+==================================================
+WhatsApp API Connection Test Successful!
+==================================================
+Would you like to send a test message? (y/n): 

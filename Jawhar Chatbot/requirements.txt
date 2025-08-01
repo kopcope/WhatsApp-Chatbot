@@ -1,0 +1,17 @@
+# Core dependencies
+flask==3.1.1
+python-dotenv==1.1.1
+requests==2.32.4
+
+# OpenAI for AI-powered responses
+openai==1.54.0
+
+gTTS==2.5.4
+langdetect==1.0.9
+
+# Development tools
+black==25.1.0
+flake8==7.3.0
+mypy==1.16.1
+pytest==8.4.1
+pre-commit==4.2.0

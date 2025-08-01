@@ -1,0 +1,342 @@
+ * Serving Flask app 'webhook_server'
+ * Debug mode: off
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://172.16.30.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:__main__:🔐 Webhook verification request:
+INFO:__main__:   Mode: None
+INFO:__main__:   Token: samidi
+INFO:__main__:   Challenge: 1234
+ERROR:__main__:❌ Webhook verification failed!
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:31:44] "[31m[1mGET /webhook?hub.verify_token=samidi&hub.challenge=1234 HTTP/1.1[0m" 403 -
+INFO:__main__:🔐 Webhook verification request:
+INFO:__main__:   Mode: None
+INFO:__main__:   Token: samidi
+INFO:__main__:   Challenge: 1234
+ERROR:__main__:❌ Webhook verification failed!
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:31:51] "[31m[1mGET /webhook?hub.verify_token=samidi&hub.challenge=1234 HTTP/1.1[0m" 403 -
+INFO:__main__:🔐 Webhook verification request:
+INFO:__main__:   Mode: subscribe
+INFO:__main__:   Token: samidi
+INFO:__main__:   Challenge: 1396211723
+INFO:__main__:✅ Webhook verified successfully!
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:43:03] "GET /webhook?hub.mode=subscribe&hub.challenge=1396211723&hub.verify_token=samidi HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUEzQkE0MTMwOUNFQkY4OUQzMQA=",
+                "timestamp": "1752720206",
+                "text": {
+                  "body": "Hi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752720206
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUEzQkE0MTMwOUNFQkY4OUQzMQA=
+INFO:__main__:   Text: Hi
+ERROR:__main__:Error processing message: name 'openai_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:43:27] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTIzREU0NEUyRkMwODNBNkFERQA=",
+                "timestamp": "1752720513",
+                "text": {
+                  "body": "Hi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752720513
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQTIzREU0NEUyRkMwODNBNkFERQA=
+INFO:__main__:   Text: Hi
+ERROR:__main__:Error processing message: name 'openai_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:48:34] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQThGMjdFREQ4MDA4REU0N0M3OAA=",
+                "timestamp": "1752720558",
+                "text": {
+                  "body": "Hi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752720558
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQThGMjdFREQ4MDA4REU0N0M3OAA=
+INFO:__main__:   Text: Hi
+ERROR:__main__:Error processing message: name 'openai_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:49:19] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUQzMzNERUY3NzQ3NTdFQUUzNQA=",
+                "timestamp": "1752720600",
+                "text": {
+                  "body": "Hi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752720600
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUQzMzNERUY3NzQ3NTdFQUUzNQA=
+INFO:__main__:   Text: Hi
+ERROR:__main__:Error processing message: name 'openai_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:50:00] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUU4RDlCRjcwOEE2RDZENUExRAA=",
+                "timestamp": "1752720772",
+                "text": {
+                  "body": "Hi"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752720772
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUU4RDlCRjcwOEE2RDZENUExRAA=
+INFO:__main__:   Text: Hi
+ERROR:__main__:Error processing message: name 'openai_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 06:52:53] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "16465894168"
+                },
+                "wa_id": "16465894168"
+              }
+            ],
+            "messages": [
+              {
+                "from": "16465894168",
+                "id": "wamid.HBgLMTY0NjU4OTQxNjgVAgASGBI5MjRCRkYyMjFGMTMzRjlGNUYA",
+                "timestamp": "1752575975",
+                "text": {
+                  "body": "*Get inspiration from success stories*\n\nNow that you're set up on the WhatsApp Business platform, it's time to think about what you'd like to accomplish first. Learn about how you can send promos, capture and nurture leads, and streamline customer support through these success stories!\n\nLearn more: https://business.whatsapp.com/resources/success-stories?lang=en_US"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:⏰ Skipping old message from 169996s ago: wamid.HBgLMTY0NjU4OTQxNjgVAgASGBI5MjRCRkYyMjFGMTMzRjlGNUYA
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 13:52:51] "POST /webhook HTTP/1.1" 200 -
+INFO:__main__:📥 Received webhook data: {
+  "object": "whatsapp_business_account",
+  "entry": [
+    {
+      "id": "1692019184824972",
+      "changes": [
+        {
+          "value": {
+            "messaging_product": "whatsapp",
+            "metadata": {
+              "display_phone_number": "96824299436",
+              "phone_number_id": "645998308607598"
+            },
+            "contacts": [
+              {
+                "profile": {
+                  "name": "n"
+                },
+                "wa_id": "96891224954"
+              }
+            ],
+            "messages": [
+              {
+                "from": "96891224954",
+                "id": "wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUE4OEUxOUMyMzRCQzhCNzc2NAA=",
+                "timestamp": "1752746213",
+                "text": {
+                  "body": "Help"
+                },
+                "type": "text"
+              }
+            ]
+          },
+          "field": "messages"
+        }
+      ]
+    }
+  ]
+}
+INFO:__main__:📨 Received message from 96891224954
+INFO:__main__:   Type: text
+INFO:__main__:   Timestamp: 1752746213
+INFO:__main__:   Message ID: wamid.HBgLOTY4OTEyMjQ5NTQVAgASGBQzQUE4OEUxOUMyMzRCQzhCNzc2NAA=
+INFO:__main__:   Text: Help
+ERROR:__main__:Error processing message: name 'help_response' is not defined
+INFO:werkzeug:127.0.0.1 - - [17/Jul/2025 13:56:55] "POST /webhook HTTP/1.1" 200 -
